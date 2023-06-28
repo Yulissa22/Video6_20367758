@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Video6_20367758.MainPage">
+
+    <StackLayout Margin="20,35,20,20">
+        <!--"MaxLength" establece el limite de texto que se puede ingreasr
+        "IsSpellCheckEnabled" permite que se muestren sugerencias de 
+        correccion ortografica,"IsTextPredictionEnabled" muestra sugerencias 
+        de palabras mientras se escribe, "IsPassword" permite ocultar o mostrar
+        el texto de tipo contraseña "Keyboard" Establece el tipo de teclado.-->
+        <Entry Placeholder="Usuario"
+               MaxLength="10"
+               IsSpellCheckEnabled="True"
+               IsTextPredictionEnabled="True"
+               IsPassword="False"
+               Keyboard="Text"
+               CharacterSpacing="10"
+               TextChanged="Entry_TextChanged"
+               Completed="Entry_Completed"/>
+    </StackLayout>
+
+</ContentPage>
